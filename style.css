@@ -67,6 +67,8 @@ header{
 /* -----main----- */
 main{
   padding-top: 150px;
+  overflow-x: hidden;
+  padding-bottom: 120px;
 }
 /* -----index----- */
 .index {
@@ -94,6 +96,7 @@ main{
   display: flex;
   gap: var(--size60);
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .about-text-wrap{
@@ -171,7 +174,7 @@ main{
   content: "";
   display: block;
   position: absolute;
-  border-radius: 50% 100%;
+  border-radius: 100% 50%;
 }
 
 .footer-wave::before {
@@ -188,3 +191,5 @@ main{
   left: -1.5%;
   top: 40%;
 }
+
+
