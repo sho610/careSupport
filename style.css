@@ -11,17 +11,30 @@ li{
   --size16: min(1.11vw, 16px);
   --size20: min(1.38vw, 20px);
   --size25: min(1.73vw, 25px);
+  --size27: var(1.875vw, 27px);
   --size30: min(2.08vw, 30px);
+  --size32: min(2.22vw ,32px);
   --size35: min(2.43vw, 35px);
   --size40: min(2.77vw, 40px);
   --size42: min(2.9vw, 42px);
   --size45: min(3.1vw, 45px);
   --size50: min(3.47vw, 50px);
   --size60: min(4.16vw, 60px);
+  --size70: min(4.86vw ,70px)
 }
 
+
 body{
-  color: #707070
+  color: #707070;
+  font-family: "yu-gothic-pr6n", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.marugo{
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 
@@ -153,6 +166,76 @@ main{
 /* -----top-service----- */
 .top-service{
   padding-top: 100px;
+}
+
+.service-title-wrap{
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+.service-title{
+  font-size: var(--size40);
+}
+.service-text{
+  margin-top: min(6vw ,87px);
+  font-size: var(--size16);
+  width: min(53.6vw,772px);
+  line-height: var(--size27);
+}
+
+.service-content-wrap{
+  /* width: 100%; */
+  padding: 0 min(7vw,75px);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px 68px;
+  flex-wrap: wrap;
+  margin-top: min(9.3vw,134px);
+}
+.service-content{
+  width: min(42.4vw, 611px);
+  text-align: center;
+}
+.service-content:nth-child(even){
+  padding-top: 60px;
+}
+.content-title{
+  font-size: var(--size32);
+  color: #EF8123;
+}
+.contetn-img{
+  width: 100%;
+  background-color: #D8D8D8;
+  border-radius: 51px;
+  height: min(24.3vw,350px);
+}
+.content-text{
+  font-size: var(--size16);
+  line-height: var(--size27);
+  margin-top: var(--size45);
+}
+.btn{
+  width: min(26vw ,374px);
+  height: min(4.09vw ,59px);
+  background-color: #F8AC00;
+  border: 3px solid #EF8123;
+  border-radius: 42px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+.content-btn{
+  margin-top: var(--size70);
+}
+.btn-text{
+  font-size: var(--size16);
+  line-height: var(--size27);
+  line-height: min(4.09vw ,59px);
+  position: relative;
+}
+.btn-text span{
+  position: absolute;
+  right: 25px;
 }
 
 /* -----insta----- */
