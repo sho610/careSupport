@@ -357,6 +357,7 @@ main{
   background-color: #D8D8D8;
   border-radius: 51px;
   height: min(24.3vw,350px);
+  margin-top: var(--size60);
 }
 .content-text{
   font-size: var(--size16);
