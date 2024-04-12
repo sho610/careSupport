@@ -8,8 +8,10 @@ li{
 }
 
 :root {
+  --size14: min(0.97vw, 14px);
   --size16: min(1.11vw, 16px);
   --size20: min(1.38vw, 20px);
+  --size24: min(1.66vw, 24px);
   --size25: min(1.73vw, 25px);
   --size27: var(1.875vw, 27px);
   --size30: min(2.08vw, 30px);
@@ -18,6 +20,7 @@ li{
   --size40: min(2.77vw, 40px);
   --size42: min(2.9vw, 42px);
   --size45: min(3.1vw, 45px);
+  --size48: min(3.33vw,48px);
   --size50: min(3.47vw, 50px);
   --size60: min(4.16vw, 60px);
   --size70: min(4.86vw ,70px)
@@ -82,6 +85,8 @@ main{
   padding-top: 150px;
   overflow-x: hidden;
   padding-bottom: 120px;
+  z-index: 10;
+  position: relative;
 }
 /* -----index----- */
 .index {
@@ -165,7 +170,8 @@ main{
 
 /* -----top-service----- */
 .top-service{
-  padding-top: 100px;
+  padding-top: min(6.94vw,100px);
+  padding-bottom: min(18.75vw,270px);
 }
 
 .service-title-wrap{
@@ -238,11 +244,78 @@ main{
   right: 25px;
 }
 
+/* -----recruit----- */
+.recruit{
+  background-color: #D8D8D8;
+  padding: 0 73px;
+  padding-bottom: 94px;
+}
+.recruit-wrap{
+  width: 100%;
+  /* margin-top: min(19.8vw,286px);
+  padding-left: min(6.25vw ,90px); */
+  display: flex;
+  gap: var(--size60);
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.recruit-text-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: var(--size60);
+  padding-top: min(24.65vw,355px);
+}
+.recruit-title{
+  font-size: var(--size40);
+  line-height: min(4.72vw,68px);
+  font-weight: bold
+}
+.recruit-text{
+  width: min(53.6vw,772px);
+  font-size: var(--size16);
+  line-height: var(--size27);
+}
+.recruit-img-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.recruit-img{
+  height: 500px;
+  width: 100%;
+}
+.recruit-btn{
+
+}
+
 /* -----insta----- */
 .instagram{
   position: relative;
   background: #FCF4E8;
-  height: 50vh;
+  height: auto;
+  padding-top: min(12.15vw,175px);
+  padding-bottom: 115px;
+}
+
+.insta-title{
+  text-align: center;
+  font-size: var(--size40);
+  line-height: min(4.72vw,68px);
+}
+
+.insta-img-list{
+  padding: 0 min(11.94vw,172px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 13px;
+  padding-top: min(3.33vw,48px);
+}
+
+.insta-list-item{
+  width: min(18.33vw,264px);
+  height: min(18.68vw,269px);
+  background-color: #D8D8D8;
 }
 
 .footer-wave {
@@ -263,7 +336,7 @@ main{
 .footer-wave::before {
   width: 55%;
   height: 109%;
-  background-color: #fff;
+  background-color: #F8AC00;
   right: -1.5%;
   top: 60%;
 }
@@ -274,5 +347,94 @@ main{
   left: -1.5%;
   top: 40%;
 }
+/* ----footer----- */
+footer{
+  background-color: #F8AC00;
+  position: relative;
+  padding: 0 min(9.3vw,134px);
+  margin-top: -120px;
+  padding-top: 120px;
+  color: #fff;
+}
 
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content{
+  width: min(41.52vw,598px);
+  padding-bottom: 117px;
+}
+.footer-logo{
+  font-size: min(4.58vw,66px);
+  line-height: min(7.77vw,112px);
+}
+.footer-add{
+  font-size: var(--size16);
+  line-height: var(--size27);
+}
+.footer-link-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27.5px;
+}
 
+.footer-link-item{
+  width: min(19.79vw,285px);
+  text-align: left;
+  border-bottom: 1px solid;
+  font-size: var(--size20);
+  line-height: min(2.36vw,34px);
+  padding-bottom: 12.5px;
+  font-weight: bold;
+}
+.footer-btn-wrap{
+  display: flex;
+  margin-top: 40px;
+  gap: 28px;
+}
+.footer-contact-btn{
+  width: min(19.79vw, 285px);
+  height: var(--size70);
+  line-height: var(--size70);
+  position: relative;
+  border-radius: 10px;
+  color: #F8AC00;
+  background-color: #fff;
+  text-align: left;
+  padding: 0 22px 0 32px;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+}
+.footer-contact-btn span{
+  position: absolute;
+  right: 25px;
+}
+.footer-tel-btn{
+  width: min(19.79vw, 285px);
+  height: var(--size70);
+  line-height: var(--size70);
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  text-align: left;
+  padding-left: 28px;
+  box-sizing: border-box;
+}
+
+.footer-tel-time{
+  font-size: var(--size14);
+  line-height: var(--size24);
+}
+.copyright{
+  font-size: var(--size14);
+  line-height: var(--size24);
+}
+
+.footer-map{
+  width: 467px;
+  height: 363px;
+  aspect-ratio: 467 / 363;
+  background-color: #D8D8D8;
+}
