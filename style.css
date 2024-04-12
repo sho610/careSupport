@@ -74,3 +74,41 @@ header{
   left: -1.5%;
   top: 60%;
 }
+
+
+/* -----insta----- */
+.instagram{
+  position: relative;
+  background: #FCF4E8;
+  height: 50vh;
+}
+
+.footer-wave {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  background: #FCF4E8;
+  bottom: 0;
+}
+
+.footer-wave::before, .footer-wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.footer-wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: #fff;
+  right: -1.5%;
+  top: 40%;
+}
+.footer-wave::after {
+  width: 55%;
+  height: 109%;
+  background-color: #FCF4E8;
+  left: -1.5%;
+  top: 60%;
+}
