@@ -7,20 +7,43 @@ li{
   list-style: none;
 }
 
+:root {
+  --size16: min(1.11vw, 16px);
+  --size20: min(1.38vw, 20px);
+  --size25: min(1.73vw, 25px);
+  --size30: min(2.08vw, 30px);
+  --size35: min(2.43vw, 35px);
+  --size40: min(2.77vw, 40px);
+  --size42: min(2.9vw, 42px);
+  --size45: min(3.1vw, 45px);
+  --size50: min(3.47vw, 50px);
+  --size60: min(4.16vw, 60px);
+}
+
+body{
+  color: #707070
+}
+
 
 header{
   display: grid;
   grid-template-columns: 0 1fr;
   width: 100%;
   justify-content: space-between;
-  padding: 0 95px;
-  padding-top: 54px;
+  padding: 54px 95px;
+  /* padding-top: 54px; */
   box-sizing: border-box;
   background-color: #FCF4E8;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
 }
 
 .logo{
   /* width: 30%; */
+  height: 42px;
+  line-height: 42px;
+  font-size: var(--size42);
 }
 
 .header-item{
@@ -28,6 +51,9 @@ header{
   width: 100%;
   justify-content: flex-end;
   float: right;
+  height: 42px;
+  line-height: 42px;
+  font-size: var(--size20);
 }
 
 .header-text{
@@ -39,15 +65,60 @@ header{
 }
 
 /* -----main----- */
+main{
+  padding-top: 150px;
+}
+/* -----index----- */
 .index {
   position: relative;
   background: #FCF4E8;
-  height: 50vh;
+  height: auto;
+  padding-bottom: 120px;
+}
+
+.attention-img{
+  width: min(92.1vw ,1327px);
+  height: min(52vw ,750px);
+  background-color: #D8D8D8;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.attention-img img{
+  width: 100%;
+}
+
+.about-wrap{
+  width: 100%;
+  margin-top: min(19.8vw,286px);
+  padding-left: min(6.25vw ,90px);
+  display: flex;
+  gap: var(--size60);
+  box-sizing: border-box;
+}
+
+.about-text-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.about-title{
+  font-size: var(--size40);
+}
+
+.about-text{
+  width: min(38.2vw ,550px);
+}
+
+.about-img{
+  width: min(50vw,720px);
+  height: min(35vw,504px);
+  background-color: #D8D8D8;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .wave {
   position: absolute;
-  height: 90px;
+  height: 100px;
   width: 100%;
   background: #FCF4E8;
   bottom: 0;
@@ -76,6 +147,11 @@ header{
 }
 
 
+/* -----top-service----- */
+.top-service{
+  padding-top: 100px;
+}
+
 /* -----insta----- */
 .instagram{
   position: relative;
@@ -85,7 +161,7 @@ header{
 
 .footer-wave {
   position: absolute;
-  height: 90px;
+  height: 100px;
   width: 100%;
   background: #FCF4E8;
   bottom: 0;
@@ -100,15 +176,15 @@ header{
 
 .footer-wave::before {
   width: 55%;
-  height: 100%;
+  height: 109%;
   background-color: #fff;
   right: -1.5%;
-  top: 40%;
+  top: 60%;
 }
 .footer-wave::after {
   width: 55%;
-  height: 109%;
+  height: 100%;
   background-color: #FCF4E8;
   left: -1.5%;
-  top: 60%;
+  top: 40%;
 }
