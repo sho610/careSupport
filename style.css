@@ -334,15 +334,15 @@ main{
 
 .service-content-wrap{
   /* width: 100%; */
-  padding: 0 min(7vw,75px);
+  padding: 0 min(5vw,72px);
   display: flex;
   justify-content: space-evenly;
-  gap: 60px 68px;
+  gap: 60px min(4.7vw,68px);
   flex-wrap: wrap;
   margin-top: min(9.3vw,134px);
 }
 .service-content{
-  width: min(42.4vw, 611px);
+  width: min(42vw, 611px);
   text-align: center;
 }
 .service-content:nth-child(even){
@@ -520,7 +520,7 @@ main{
 }
 
 .insta-img-list{
-  width: min(76vw, 1095px);
+  width: min(77vw, 1095px);
   padding: 0 min(11.94vw,172px);
   padding: 0 11.94vw;
   display: flex;
