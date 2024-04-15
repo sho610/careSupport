@@ -1,59 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TOP</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'jlu5zco',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
   </script>
-
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'jlu5zco',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+<!--#include virtual="./common/font.html"-->
 </head>
+
 <body>
-  <!-- <header>
-    <div class="logo">
-      <img src="" alt="">
-      <p>LOGO</p>
-    </div>
-    <button class="hamburger-btn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="header-item-wrap">
-      <ul class="header-item">
-        <li class="header-text header-top">top</li>
-        <li class="header-text header-business">事業内容</li>
-        <li class="header-text header-recrute">採用情報</li>
-        <li class="header-text header-overview">会社概要</li>
-        <li class="header-text header-contact">お問い合わせ</li>
-        <li class="header-text header-tel">075-432-8508</li>
-      </ul>
-    </div>
-  </header> -->
+  <!-- header読み込み -->
   <!--#include virtual="./common/header.html"-->
   <main>
     <section class="index">
-      <div class="attention-img">
+      <div class="attention-img top-attention">
         <!-- <img src="" alt=""> -->
       </div>
       <div class="about-wrap">
@@ -81,7 +45,7 @@
       <ul class="service-content-wrap">
         <li class="service-content">
           <p class="content-title marugo">訪問看護</p>
-          <div class="contetn-img">
+          <div class="contetn-img _01">
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">疾病や障害を抱えながら生活される方々に、<br>その人らしい生活をサポートする看護ケアを提供します。</p>
@@ -91,7 +55,7 @@
         </li>
         <li class="service-content">
           <p class="content-title marugo">訪問入浴</p>
-          <div class="contetn-img">
+          <div class="contetn-img _02">
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">看護師や介護職員がご自宅を訪問し、<br>専用の浴槽を使用して入浴のサポートをします。</p>
@@ -101,7 +65,7 @@
         </li>
         <li class="service-content">
           <p class="content-title marugo">訪問介護</p>
-          <div class="contetn-img">
+          <div class="contetn-img _03">
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">介護福祉士やホームヘルパーが要介護者の自宅に訪問し、<br>家事援助などの日常生活のサポートを行います。</p>
@@ -111,7 +75,7 @@
         </li>
         <li class="service-content">
           <p class="content-title marugo">配食サービス</p>
-          <div class="contetn-img">
+          <div class="contetn-img _04">
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">居宅の高齢者に定期的に食事を提供し、<br>訪問時に安否確認や健康状態の監視を行います。</p>
@@ -124,9 +88,9 @@
     <section class="recruit">
       <div class="recruit-wrap">
         <div class="recruit-text-wrap">
-          <p class="recruit-title marugo">
+          <p class="white recruit-title marugo">
             高齢者・障害者を<br>自宅で安心して生活できるよう<br>支援する仕事</p>
-          <p class="recruit-text">
+          <p class="white recruit-text">
             訪問介護スタッフは利用者の自宅を訪問し、個々のニーズや要望に合わせた支援を提供します。<br>
             利用者やその家族との信頼関係を築きながら、安心して自宅での生活を送れるよう<br>
             支援することが求められます。</p>
@@ -141,8 +105,8 @@
         </div>
       </div>
     </section>
-    <section class="instagram marugo">
-      <div class="insta-title">Instagram</div>
+    <section class="instagram marugo bottom-wave">
+      <!-- <div class="insta-title">Instagram</div>
       <ul class="insta-img-list">
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
@@ -152,40 +116,14 @@
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
-      </ul>
+      </ul> -->
       <div class="footer-wave"></div>
     </section>
   </main>
-  <!-- <footer>
-    <div class="footer-wrap">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="" alt="">
-          LOGO
-        </div>
-        <div class="footer-add">
-          〒604-8233<br>
-          京都市中京区西ノ京壺ノ内町15番地17
-        </div>
-        <div class="footer-link-wrap">
-          <div class="footer-link-item footer-top">TOP</div>
-          <div class="footer-link-item footer-business">事業内容</div>
-          <div class="footer-link-item footer-recruit">採用情報</div>
-          <div class="footer-link-item footer-overview">会社概要</div>
-        </div>
-        <div class="footer-btn-wrap">
-          <div class="footer-contact-btn btn">お問い合わせ<span>▶︎</span></div>
-          <div class="footer-tel">
-            <div class="footer-tel-btn btn">075-432-8508</div>
-            <div class="footer-tel-time">※受付時間0:00~0:00</div>
-          </div>
-        </div>
-        <div class="copyright">©〇〇 Rights Reserved. All Rights Reserved.</div>
-      </div>
-      <div class="footer-map"></div>
-    </div>
-  </footer> -->
+
+  <!-- footer読み込み -->
   <!--#include virtual="./common/footer.html"-->
   <script src="./index.js"></script>
 </body>
+
 </html>
