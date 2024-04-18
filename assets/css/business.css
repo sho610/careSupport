@@ -88,6 +88,8 @@
 .business-content-title {
   font-size: var(--size32);
   line-height: var(--size54);
+  padding-top: 115px;
+  margin-top:-115px;
 }
 
 .business-content-text {

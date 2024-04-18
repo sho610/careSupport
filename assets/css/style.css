@@ -113,6 +113,34 @@ header {
   padding: 0;
 }
 
+.acc-content{
+  display: none;
+  position: absolute;
+}
+
+.acc-content ul {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px;
+  padding-top: 20px; */
+  background-color: #FCF4E8;
+}
+
+.acc-item {
+  font-size: 17px;
+  color: #707070;
+  padding: 13px 24px 14px 11px;
+}
+
+.acc-item:hover {
+  /* background-color: #005CAF; */
+  opacity: 0.6;
+}
+
+.acc-item:hover a {
+
+}
+
 @media screen and (max-width: 768px) {
 
 
