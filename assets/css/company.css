@@ -14,14 +14,12 @@
   flex-direction: column;
 }
 
-.about-CEO-title {
-
-}
-.CEO-subTitle{
+.CEO-subTitle {
   font-size: var(--size16);
   line-height: var(--size27);
 }
-.CEO-title-name{
+
+.CEO-title-name {
   font-size: var(--size32);
   line-height: var(--size54);
 }
@@ -35,7 +33,7 @@
 }
 
 .about-CEO-img {
-  width: min(586px,40.7vw);
+  width: min(586px, 40.7vw);
   height: min(28.47vw, 410px);
   /* background-image: url(../top/00.webp); */
   background-color: #D8D8D8;
@@ -76,6 +74,9 @@
 }
 
 @media screen and (max-width: 768px) {
+
+
+
   .attention-img {
     width: auto;
     height: 540px;
@@ -89,22 +90,23 @@
     padding: 0 12px;
   }
 
-  .CEO-subTitle{
+  .CEO-subTitle {
     font-size: 16px;
     line-height: 27px;
   }
-  .CEO-title-name{
+
+  .CEO-title-name {
     font-size: 32px;
     line-height: 54px;
   }
-  
+
   .about-CEO-text {
     width: auto;
     margin-top: 24px;
     font-size: 16px;
     line-height: 27px;
   }
-  
+
 
   .about-CEO-title {
     font-size: 32px;
@@ -121,80 +123,147 @@
   }
 }
 
-.philosophy{
+.philosophy {
   text-align: center;
-  margin-top: min(8.68vw ,125px);
+  margin-top: min(8.68vw, 125px);
 }
 
-.philosophy div .title{
+.philosophy div .title {
   font-size: var(--size40);
-  line-height: min(4.72vw,68px);
+  line-height: min(4.72vw, 68px);
 }
 
-.philosophy div .text{
+.philosophy div .text {
   font-size: var(--size16);
   line-height: var(--size27);
   margin-top: 30px;
 }
 
-.management-philosophy-title, .company-policy-title {
+.management-philosophy-title,
+.company-policy-title {
   margin-top: var(--size30);
 }
 
 @media screen and (max-width: 768px) {
-  .philosophy{
+  .philosophy {
     padding: 0 12px;
   }
-  .philosophy div .title{
+
+  .philosophy div .title {
     font-size: 40px;
     line-height: 68px;
   }
-  .philosophy div .text{
+
+  .philosophy div .text {
     font-size: 16px;
-  line-height: 27px;
+    line-height: 27px;
   }
-  .management-philosophy-title, .company-policy-title {
+
+  .management-philosophy-title,
+  .company-policy-title {
     margin-top: 30px;
   }
 }
 
-.company-overview{
-  margin-top: min(9.72vw,140px);
-  padding-bottom: min(6.94vw,100px);
+.company-overview {
+  margin-top: min(9.72vw, 140px);
+  padding-bottom: min(6.94vw, 100px);
 }
 
-.company-table{
+.company-table {
   border-collapse: collapse;
   margin: 0 auto;
   width: 70.27vw;
   font-weight: bold;
 }
-.company-table tr{
+
+.company-table tr {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
 }
 
-.company-table tr td{
+.company-table tr td {
   padding: 39px 0;
 }
-.company-table tr td:nth-child(1){
+
+.company-table tr td:nth-child(1) {
   padding-left: 25px;
 }
 
+.about-CEO-text-wrap_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 104px 104px 0 104px;
+}
+
+.CEO-title_1 {
+  width: 30%;
+}
+
+.CEO-text_1 {
+  width: 65%;
+}
+
 @media screen and (max-width: 768px) {
-  .company-table tr{
+
+
+
+  .company-table tr {
     display: flex;
     flex-direction: column;
     border-top: 1px solid #707070;
     border-bottom: none;
   }
-  .company-table tr:last-child{
+
+  .company-table tr:last-child {
     border-bottom: 1px solid #707070;
   }
-  .company-table tr td{
+
+  .company-table tr td {
     padding: 10px 0;
   }
-  .company-table tr td:nth-child(2){
-    padding-left: 25px;
+
+  .company-table tr td:nth-child(2) {
+    padding-left: 0px;
+  }
+
+  .company-table tr {
+    padding: 8px 0;
+  }
+
+  .company-table tr td {
+    padding: 0;
+  }
+
+  .company-table tr td:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .company-table {
+    width: 93%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .philosophy {
+    margin-top: min(13.68vw, 125px);
+  }
+
+  .philosophy div .text {
+    margin-top: 16px;
+  }
+
+  .about-CEO-text-wrap_block {
+    display: block;
+    justify-content: unset;
+    padding: 64px 16px 0;
+  }
+
+  .CEO-title_1 {
+    width: 100%;
+  }
+
+  .CEO-text_1 {
+    width: 100%;
   }
 }

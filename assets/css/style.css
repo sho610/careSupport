@@ -57,6 +57,11 @@ body {
 
 a {
   text-decoration: none;
+  color: #707070;
+}
+
+.footer-link-item a {
+  color: white;
 }
 
 header {
@@ -77,6 +82,7 @@ header {
 .header_logo {
   font-size: 20px;
   color: #707070;
+  font-weight: bold;
 }
 
 .hamburger-btn {
@@ -85,7 +91,6 @@ header {
 
 .logo {
   /* width: 30%; */
-  height: 42px;
   line-height: 42px;
   font-size: var(--size42);
 }
@@ -257,25 +262,26 @@ main {
   border-radius: 50px;
 }
 
-.top-attention{
+.top-attention {
   background-image: url(../top/06.webp);
 }
 
-.company-attention{
-  background-color: #D8D8D8;
+.company-attention {
+  background-image: url(../recruit/re_2.webp);
 }
 
-.business-attention{
-  background-color: #D8D8D8;
+.business-attention {
+  background-image: url(../recruit/re_1.webp);
 }
 
-.recruit-attention{
-  background-color: #D8D8D8;
+.recruit-attention {
+  background-image: url(../recruit/top.webp);
 }
 
 .attention-img img {
   width: 100%;
 }
+
 
 .about-wrap {
   width: 100%;
@@ -347,7 +353,16 @@ main {
   top: 60%;
 }
 
+.footer-tel-btn {
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
+
+  .br_pc {
+    display: none;
+  }
+
   .attention-img {
     width: auto;
     height: 540px;
@@ -378,6 +393,7 @@ main {
     width: auto;
     height: 504px;
     margin-right: -12px;
+    margin-top: 16px;
   }
 
   .wave {
@@ -510,6 +526,7 @@ main {
     font-size: 16px;
     width: auto;
     padding: 0 12px;
+    line-height: 27px;
   }
 
   .service-content {
@@ -527,7 +544,7 @@ main {
   .content-text {
     font-size: 16px;
     line-height: 27px;
-    margin-top: 45px;
+    margin-top: 24px;
   }
 
   .content-btn {
@@ -639,16 +656,7 @@ main {
   }
 }
 
-/* -----insta----- */
-.instagram {
-  /* position: relative;
-  background: #FCF4E8;
-  height: auto;
-  padding-top: min(12.15vw, 175px);
-  padding-bottom: 115px; */
-}
-
-.bottom-wave{
+.bottom-wave {
   position: relative;
   background: #FCF4E8;
   height: auto;
@@ -759,6 +767,7 @@ footer {
 .footer-logo {
   font-size: min(2.58vw, 66px);
   line-height: min(7.77vw, 112px);
+  font-weight: bold;
 }
 
 .footer-add {
