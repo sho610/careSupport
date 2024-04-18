@@ -225,6 +225,7 @@ header {
 main {
   padding-top: 88px;
   overflow-x: hidden;
+  /* overflow-y: hidden; */
   padding-bottom: 120px;
   z-index: 10;
   position: relative;
@@ -265,6 +266,10 @@ main {
 }
 
 .business-attention{
+  background-color: #D8D8D8;
+}
+
+.recruit-attention{
   background-color: #D8D8D8;
 }
 
