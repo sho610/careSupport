@@ -114,7 +114,33 @@
     <div class="header-item-wrap">
       <ul class="header-item">
         <li class="header-text header-top"><a href="index.html">top</a></li>
-        <li class="header-text header-business"><a href="business.html">事業内容</a></li>
+        <li class="header-text header-business acc-title">
+          <a href="business.html">事業内容</a>
+          <div class="acc-content">
+            <ul>
+              <li class="acc-item">
+                <a href="./business.html#nurse">
+                  訪問看護
+                </a>
+              </li>
+              <li class="acc-item">
+                <a href="./business.html#bathing">
+                  訪問入浴
+                </a>
+              </li>
+              <li class="acc-item">
+                <a href="./business.html#nursing-care">
+                  訪問介護
+                </a>
+              </li>
+              <li class="acc-item">
+                <a href="./business.html#meal-distribution">
+                  配色サービス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li class="header-text header-recrute"><a href="recruit.html">採用情報</a></li>
         <li class="header-text header-overview"><a href="company.html">会社概要</a></li>
         <li class="header-text header-contact"><a href="contact.html">お問い合わせ</a></li>

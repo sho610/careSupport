@@ -95,7 +95,33 @@
     <div class="header-item-wrap">
       <ul class="header-item">
         <li class="header-text header-top"><a href="index.html">top</a></li>
-        <li class="header-text header-business"><a href="business.html">事業内容</a></li>
+        <li class="header-text header-business acc-title">
+          <a href="business.html">事業内容</a>
+          <div class="acc-content">
+            <ul>
+              <li class="acc-item">
+                <a href="./business.html#nurse">
+                  訪問看護
+                </a>
+              </li>
+              <li class="acc-item">
+                <a href="./business.html#bathing">
+                  訪問入浴
+                </a>
+              </li>
+              <li class="acc-item">
+                <a href="./business.html#nursing-care">
+                  訪問介護
+                </a>
+              </li>
+              <li class="acc-item">
+                <a href="./business.html#meal-distribution">
+                  配色サービス
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li class="header-text header-recrute"><a href="recruit.html">採用情報</a></li>
         <li class="header-text header-overview"><a href="company.html">会社概要</a></li>
         <li class="header-text header-contact"><a href="contact.html">お問い合わせ</a></li>
@@ -139,9 +165,11 @@
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">疾病や障害を抱えながら生活される方々に、<br class="br_pc">その人らしい生活をサポートする看護ケアを提供します。</p>
-          <div class="content-btn btn">
-            <p class="btn-text">くわしく見る<span>▶︎</span></p>
-          </div>
+          <a href="./business.html#nurse">
+            <div class="content-btn btn">
+              <p class="btn-text">くわしく見る<span>▶︎</span></p>
+            </div>
+          </a>
         </li>
         <li class="service-content">
           <p class="content-title marugo">訪問入浴</p>
@@ -149,9 +177,11 @@
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">看護師や介護職員がご自宅を訪問し、<br class="br_pc">専用の浴槽を使用して入浴のサポートをします。</p>
-          <div class="content-btn btn">
-            <p class="btn-text">くわしく見る<span>▶︎</span></p>
-          </div>
+          <a href="./business.html#bathing">
+            <div class="content-btn btn">
+              <p class="btn-text">くわしく見る<span>▶︎</span></p>
+            </div>
+          </a>
         </li>
         <li class="service-content">
           <p class="content-title marugo">訪問介護</p>
@@ -159,9 +189,11 @@
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">介護福祉士やホームヘルパーが要介護者の自宅に訪問し、<br class="br_pc">家事援助などの日常生活のサポートを行います。</p>
-          <div class="content-btn btn">
-            <p class="btn-text">くわしく見る<span>▶︎</span></p>
-          </div>
+          <a href="./business.html#nursing-care">
+            <div class="content-btn btn">
+              <p class="btn-text">くわしく見る<span>▶︎</span></p>
+            </div>
+          </a>
         </li>
         <li class="service-content">
           <p class="content-title marugo">配食サービス</p>
@@ -169,9 +201,11 @@
             <!-- <img src="" alt=""> -->
           </div>
           <p class="content-text">居宅の高齢者に定期的に食事を提供し、<br class="br_pc">訪問時に安否確認や健康状態の監視を行います。</p>
-          <div class="content-btn btn ">
-            <p class="btn-text">くわしく見る<span>▶︎</span></p>
-          </div>
+          <a href="./business.html#meal-distribution">
+            <div class="content-btn btn ">
+              <p class="btn-text">くわしく見る<span>▶︎</span></p>
+            </div>
+          </a>
         </li>
       </ul>
     </section>
@@ -198,17 +232,20 @@
       </div>
     </section>
     <section class="instagram marugo bottom-wave">
-      <!-- <div class="insta-title">Instagram</div>
+      <div class="insta-title">Instagram</div>
       <ul class="insta-img-list">
+        <!-- <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
         <li class="insta-list-item"></li>
-        <li class="insta-list-item"></li>
-        <li class="insta-list-item"></li>
-      </ul> -->
+        <li class="insta-list-item"></li> -->
+      </ul>
+      <div id="instagram-feed">
+        <!-- ここにインスタグラムの投稿が表示されます -->
+      </div>
       <div class="footer-wave"></div>
     </section>
   </main>
@@ -248,6 +285,7 @@
   <!-- footer読み込み -->
   <!--   #include virtual="./common/footer.html"-->
   <script src="./index.js"></script>
+  <script src="./insta.js"></script>
 </body>
 
 </html>

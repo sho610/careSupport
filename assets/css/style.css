@@ -60,6 +60,10 @@ a {
   color: #707070;
 }
 
+a:hover{
+  opacity: 0.6;
+}
+
 .footer-link-item a {
   color: white;
 }
@@ -713,7 +717,12 @@ main {
 .insta-list-item {
   width: min(18.33vw, 264px);
   height: min(18.68vw, 269px);
-  background-color: #D8D8D8;
+  /* background-color: #D8D8D8; */
+}
+
+.insta-list-item a img{
+  width: 100%;
+  height: 100%;
 }
 
 .footer-wave {
